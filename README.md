@@ -21,12 +21,16 @@ Given a starting position and an ending position on a chessboard, the task is to
 Example:
 ```plaintext
 knightMoves([0, 0], [3, 3]) => [[0, 0], [2, 1], [3, 3]]
-
+```
 # Solution Approach
-1. ## Graph Representation : The chessboard is implicitly represented as a graph, where each square is a node, and the knight's valid moves are the edges.
-2. ## BFS Algorithm : BFS is used to explore all possible moves from the starting position, ensuring the shortest path is found.
-3. ## Move Generation : A helper function generates all valid moves for the knight from a given position, ensuring moves stay within the bounds of the chessboard.
-4. ## Path Reconstruction : Once the destination is reached, the path is reconstructed using parent pointers stored during the BFS traversal.
+1. ## Graph Representation: 
+The chessboard is implicitly represented as a graph, where each square is a node, and the knight's valid moves are the edges.
+2. ## BFS Algorithm: 
+BFS is used to explore all possible moves from the starting position, ensuring the shortest path is found.
+3. ## Move Generation: 
+A helper function generates all valid moves for the knight from a given position, ensuring moves stay within the bounds of the chessboard.
+4. ## Path Reconstruction: 
+Once the destination is reached, the path is reconstructed using parent pointers stored during the BFS traversal.
 
 # How It Works
 1. The program starts at the given starting position.
@@ -34,7 +38,7 @@ knightMoves([0, 0], [3, 3]) => [[0, 0], [2, 1], [3, 3]]
 3. If the destination is reached, the program reconstructs the path taken.
 4. The result is displayed as a list of positions the knight traversed.
 
-# sage
+# Usage
 To use this project:
 
 1. Clone the repository:
